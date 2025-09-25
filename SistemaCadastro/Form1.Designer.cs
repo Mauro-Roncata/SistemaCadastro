@@ -109,10 +109,6 @@
             // 
             this.comboEC.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboEC.FormattingEnabled = true;
-            this.comboEC.Items.AddRange(new object[] {
-            "Solteiro",
-            "Casado",
-            "Viúvo"});
             this.comboEC.Location = new System.Drawing.Point(280, 106);
             this.comboEC.Name = "comboEC";
             this.comboEC.Size = new System.Drawing.Size(335, 39);
@@ -166,7 +162,6 @@
             this.radioOutro.Name = "radioOutro";
             this.radioOutro.Size = new System.Drawing.Size(60, 20);
             this.radioOutro.TabIndex = 2;
-            this.radioOutro.TabStop = true;
             this.radioOutro.Text = "Outro";
             this.radioOutro.UseVisualStyleBackColor = true;
             // 
@@ -177,13 +172,13 @@
             this.radioF.Name = "radioF";
             this.radioF.Size = new System.Drawing.Size(83, 20);
             this.radioF.TabIndex = 1;
-            this.radioF.TabStop = true;
             this.radioF.Text = "Feminino";
             this.radioF.UseVisualStyleBackColor = true;
             // 
             // radioM
             // 
             this.radioM.AutoSize = true;
+            this.radioM.Checked = true;
             this.radioM.Location = new System.Drawing.Point(9, 21);
             this.radioM.Name = "radioM";
             this.radioM.Size = new System.Drawing.Size(89, 20);
@@ -210,6 +205,7 @@
             this.btnCadastrar.TabIndex = 12;
             this.btnCadastrar.Text = "Cadastrar / Alterar";
             this.btnCadastrar.UseVisualStyleBackColor = true;
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
             // btnExcluir
             // 
@@ -219,6 +215,7 @@
             this.btnExcluir.TabIndex = 13;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // btnLimpar
             // 
@@ -228,6 +225,7 @@
             this.btnLimpar.TabIndex = 14;
             this.btnLimpar.Text = "Limpar";
             this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // Form1
             // 
