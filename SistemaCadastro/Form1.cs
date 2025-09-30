@@ -52,7 +52,7 @@ namespace SistemaCadastro
                 return; 
             }
 
-            if (txtTelefone.Text == "")
+            if (txtTelefone.Text == "(  )      -")
             {
                 MessageBox.Show("Preencha o campo Telefone!");
                 txtTelefone.Focus();
@@ -104,7 +104,9 @@ namespace SistemaCadastro
 
         private void btnExcluir_Click(object sender, EventArgs e)
         {
-
+            int indice = lista.SelectedIndex;
+            pessoas.RemoveAt(indice);
+            Listar();
         }
 
         private void btnLimpar_Click(object sender, EventArgs e)
@@ -130,5 +132,7 @@ namespace SistemaCadastro
                 lista.Items.Add(p.Nome);
             }
         }
+       
     }
+    
 }
