@@ -109,6 +109,16 @@ namespace SistemaCadastro
 
         private void btnLimpar_Click(object sender, EventArgs e)
         {
+            txtNome.Text = "";
+            txtData.Text = "";
+            comboEC.SelectedIndex = 0;
+            txtTelefone.Text = "";
+            checkCasa.Checked = false;
+            checkVeiculo.Checked = false;
+            radioM.Checked = true;
+            radioF.Checked = false;
+            radioOutro.Checked = false;
+            txtNome.Focus();
 
         }
         private void Listar()
